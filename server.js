@@ -22,7 +22,7 @@ app.get('/api/metas', async (req, res) => {
       const {bugs} = await fetchQuery({
         include_fields: ["id", "summary"],
         custom: {
-          blocked: {equals: "1433315"} // Epic bug
+          blocked: {equals: "1459029"} // Epic bug
         }
       });
       if (bugs && bugs.length)

@@ -19,14 +19,14 @@ export class Triage extends React.PureComponent {
     const {bugs: prevIterationBugs} = await runQuery({
       include_fields: prevColumns.concat(["whiteboard", "severity"]),
       resolution: "---",
-      component: ["Activity Streams: Newtab", "Activity Streams: Application Servers"],
+      component: AS_COMPONENTS,
       iteration: prevIteration.number,
     });
     const {bugs} = await runQuery({
       include_fields: columns.concat(["whiteboard", "severity"]),
       resolution: "---",
       priority: "--",
-      component: ["Activity Streams: Newtab", "Activity Streams: Application Servers"],
+      component: AS_COMPONENTS,
       keywords: "meta",
       keywords_type: "nowords",
       status_whiteboard: "blocked",

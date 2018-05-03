@@ -1,4 +1,7 @@
-export const AS_COMPONENTS = ["Activity Streams: Newtab", "New Tab Page", "Activity Streams: Application Servers"];
+export const AS_COMPONENTS = [
+  "WebExtensions: Frontend",
+  "WebExtensions: General",
+];
 // TODO: support both!!!
 // const {ipcRenderer, shell} = window.require("electron");
 import {prefs} from "./prefs";
