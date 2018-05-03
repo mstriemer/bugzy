@@ -1,4 +1,4 @@
-const EPIC_BUG_ID = 1433315;
+const EPIC_BUG_ID = 1408053;
 
 module.exports = {
   "DEFECT": {

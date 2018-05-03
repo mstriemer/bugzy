@@ -20,7 +20,7 @@ const getQuery = props => ({
       operator: "OR",
       rules: [
         {key: "blocked", operator: "anywordssubstr", value: props.metas.map(m => m.id).join(",")},
-        {key: "component", operator: "substring", value: "Activity Streams"},
+        {key: "component", operator: "substring", value: "WebExtensions"},
       ]
     }
   ]
